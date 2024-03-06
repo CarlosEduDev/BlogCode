@@ -1,0 +1,17 @@
+<h4>Faça Login</h4>
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/login" method="post">
+            <label for="email">Email: </label>
+        <input type="email" class="form-control" name="email" required>
+<br>
+        <label for="senha">Senha: </label>
+        <input type="password" class="form-control" name="senha" required>
+
+        <button class="btn btn-success mt-4" type="submit">Entrar</button>
+        </form>
+
+        <p class="mt-4">Caso você não tenha uma conta, clique no botão abaixo para criar uma conta!</p>
+        <a href="/usuarios/registro"><button class="btn btn-success ">Registre-se</button></a>
+    </div>
+</div>

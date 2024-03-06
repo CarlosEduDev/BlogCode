@@ -1,0 +1,31 @@
+<div class="jumbotron" style="background-color: rgb(207, 253, 174);">
+  <h1 style="font-weight: 400;" class="display-4">Boas vindas ao BlogCode!</h1>
+  <p class="lead" style="font-weight: 400;">Este é o seu site de publicação de postagens de informações.</p>
+  <hr class="my-4">
+  <p style="font-size: 19px;">Este é um espaço para você!</p>
+  <p class="lead" style="font-size: 18px; font-weight: 500;">
+    Aqui você terá acesso a diversas informações do mundo da tecnologia!
+  </p>
+</div>
+
+<h2>Página de posts</h2>
+
+{{#each postagens}}
+
+<div class="card mt-4" style="margin-bottom: 1rem;">
+  <div class="card-body">
+    <h3>{{titulo}}</h3>
+    <p>{{descricao}}</p>
+    <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia mais</button></a>
+    <hr>
+
+    <small>Categoria: {{categoria.nome}}</small>
+    <br>
+    <small>Data de publicação: {{data}}</small>
+  </div>
+</div>
+
+{{else}}
+<h5>Nenhuma postagem</h5>
+
+{{/each}}

@@ -1,0 +1,15 @@
+<div class="card" style="background-color: rgb(188, 241, 188);">
+  <div class="card-body">
+    <h4>Categorias: </h4>
+
+{{#each categorias}}
+  <a style="font-style: none; color: rgb(52, 109, 222);" href="/categorias/{{slug}}"><h5>{{nome}}</h5></a>
+  
+{{else}}
+
+{{/each}}
+
+<a href="/"><button class="btn btn-success mt-4">Voltar à página inicial</button>
+</a>
+  </div>
+</div>
